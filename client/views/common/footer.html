@@ -8,10 +8,14 @@
             <span class="connection_status">online</span>
         </div>
         <div class="input-box">
-            <input type="text" class="input-box_text">
+            {{> inputAutocomplete settings=settings id="msg" class="input-box_text" placeholder="Chat..."}}
+
         </div>
 
     </div>
 
 </template>
 
+<template name="userPill">
+    <span class="label">{{name}}</span>
+</template>
