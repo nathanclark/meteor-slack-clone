@@ -1,0 +1,10 @@
+<template name="messages">
+    <div class="message-history slimScrollDiv">
+        <div class="full-height-scroll" style="overflow: hidden; width: auto; height: 100%;">
+            {{#each channelMessages}}
+                {{> message text=text}}
+            {{/each}}
+        </div>
+
+    </div>
+</template>
